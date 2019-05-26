@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         nameTextView = new TextView(getApplicationContext());
         nameTextView.setText(apple.name);
-        container.addView(nameTextView);
+//        container.addView(nameTextView);
 
         LinearLayout layout = new LinearLayout(this.getApplicationContext());
 
