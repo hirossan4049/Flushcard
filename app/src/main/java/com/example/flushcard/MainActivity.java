@@ -1,7 +1,9 @@
 package com.example.flushcard;
 
+import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -17,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
                                         //apple_icon
-        apple = new Word(R.drawable.ic_launcher_background,"りんご");
+        apple = new Word(R.drawable.apple_icon,"りんご");
         container = (LinearLayout)findViewById(R.id.container);
 
         nameTextView = new TextView(getApplicationContext());
@@ -28,6 +30,15 @@ public class MainActivity extends AppCompatActivity {
 
         layout.setOrientation(LinearLayout.HORIZONTAL);
 
+        ImageView imageView = new ImageView(this);
+
+        imageView.setImageResource(apple.resId);
+
+        layout.addView(imageView);
+        layout.addView(nameTextView);
+
+        container.addView(layout);
+
+
     }
 }
-//test
