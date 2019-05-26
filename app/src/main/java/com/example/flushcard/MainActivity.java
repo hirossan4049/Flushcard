@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
                                         //apple_icon
-        apple = new Word(R.drawable.apple_icon,"りんご");
+        apple = new Word(R.drawable.apple_two,"りんご");
         container = (LinearLayout)findViewById(R.id.container);
 
         nameTextView = new TextView(getApplicationContext());
