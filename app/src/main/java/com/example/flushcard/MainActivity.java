@@ -9,7 +9,9 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     Word apple = new Word(R.drawable.apple_two,"りんご");
-    Word banana = new Word(R.drawable.ic_launcher_background,"ばなな");
+    Word banana = new Word(R.drawable.banana_icon,"ばなな");
+    Word orange = new Word(R.drawable.orange_icon,"オレンジ");
+
 
     LinearLayout container;
     TextView nameTextView;
@@ -25,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         container = (LinearLayout)findViewById(R.id.container);
 
         nameTextView = new TextView(getApplicationContext());
+        nameTextView1 = new TextView(getApplicationContext());
         nameTextView.setText(apple.name);
         nameTextView1.setText(banana.name);
 
